@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    color: var(--color-primary);
+}
+
+:root {
+   --color-primary: aliceblue; 
+   --background-principal: rgb(145, 206, 247);
+   --base-backgound: rgb(29, 23, 23);
+   --gray-btn: #616161;
+   --equal-btn: #1991ff;
+   --blue-btn: #005db2;
+   --black-btn: #303136;
+}
+
+.fundoBlack {
+    --color-primary: aliceblue; 
+    --background-principal: rgb(29, 23, 23);
+    --base-backgound: rgb(145, 206, 247);
+    --gray-btn: #616161;
+    --equal-btn: #1991ff;
+    --blue-btn: #005db2;
+    --black-btn: #303136;
+}
+
+body {
+    background: var(--background-principal);
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+div {
+    background: var(--base-backgound);
+    border-radius: 39px;
+    width: 350px;
+    height: 550px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    padding: 20px;
+}
+
+input {
+    font-size: 48px;
+    grid-column: 1 / 5 ;
+    grid-row: 1 / 3;
+    background: rgb(29, 23, 23);
+    border: none;
+    outline: none;
+    text-align: right;
+    padding-top: 50px;
+}
+
+button {
+    font-size: 24px;
+    border-radius: 16px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+
+.black-button {
+    background-color: var(--black-btn);
+}
+
+.blue-button {
+    background-color: var(--blue-btn);
+
+}
+
+.equal-button {
+    background-color: var(--equal-btn);
+
+}
+
+.gray-button {
+    background-color: var(--gray-btn);
+
+}
+
+.zero {
+    grid-column: 1 / 3;
+}
+
+.equal { 
+    grid-row: 6 / 8;
+    grid-column: 4 / 5;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
